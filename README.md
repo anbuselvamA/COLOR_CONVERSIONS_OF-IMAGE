@@ -52,6 +52,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ###output:
+
+
 ![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/4c052b30-3abe-4ea9-b767-f5c5cb4977f5)
 
 
@@ -63,6 +65,8 @@ image=cv2.imread('lion.jpg',0)
 cv2.imwrite('test.jpg',image)
 ```
 ###Output:
+
+
 ![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/1f9a03a6-fbea-45fe-ae7c-a5eb9e16b427)
 
 
@@ -73,6 +77,8 @@ image=cv2.imread('lion.jpg',1)
 print(image.shape)
 ```
 ###output:
+
+
 ![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/e08ef7f9-8dab-4f27-b253-a20b53d876b4)
 
 ### iv)Access rows and columns
@@ -91,6 +97,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 ###output:
+
+
 ![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/b3f99b78-e8f3-43fb-a1eb-093854689966)
 
 
@@ -108,6 +116,8 @@ cv2.destroyAllWindows()
 ```
 
 ###output:
+
+
 ![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/aca35e47-02d3-4494-b06a-84700cfcf407)
 
 
