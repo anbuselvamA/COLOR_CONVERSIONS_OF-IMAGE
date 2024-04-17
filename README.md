@@ -36,7 +36,7 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:ANBU SELVAM A
+### Developed By:A.ANBUSELVAM
 ### Register Number: 212222240009
 
 
@@ -45,47 +45,45 @@ Split and merge HSV Image
 ### i) Read and display the image
 ```
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('tree.png',1)
 image=cv2.resize(image,(400,300))
-cv2.imshow('Lion-Sathish',image)
+cv2.imshow('rose',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
 
 
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/4c052b30-3abe-4ea9-b767-f5c5cb4977f5)
 
+
+
+![Screenshot 2024-02-21 185629](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/0ee6cb13-9912-43fb-a330-55ce22f32989)
 
 
 ### ii)Write the image
 ```
 import cv2
-image=cv2.imread('lion.jpg',0)
+image=cv2.imread('tree.png',0)
 cv2.imwrite('test.jpg',image)
 ```
-###Output:
 
-
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/1f9a03a6-fbea-45fe-ae7c-a5eb9e16b427)
+![Screenshot 2024-02-21 214919](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/9d329b84-a4ad-429a-9e6b-33533b8f80e6)
 
 
 ### iii)Shape of the Image
 ```
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('tree.png')
 print(image.shape)
 ```
-###output:
 
+![Screenshot 2024-02-21 214927](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/896a2517-2d6f-4f55-90fc-fe0055fd62fd)
 
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/e08ef7f9-8dab-4f27-b253-a20b53d876b4)
 
 ### iv)Access rows and columns
 ```
 import random
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('tree.png',1)
 image=cv2.resize(image,(400,400))
 for i in range (150,200):
     for j in range(image.shape[1]):
@@ -96,17 +94,14 @@ cv2.imshow('part image',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
 
-
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/b3f99b78-e8f3-43fb-a1eb-093854689966)
-
+![Screenshot 2024-02-21 185707](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/37ad4393-326c-413b-a714-c31fe4691ca1)
 
 
 ### v)Cut and paste portion of image
 ```
 import cv2
-image=cv2.imread('lion.jpg',1)
+image=cv2.imread('tree.png',1)
 image=cv2.resize(image,(400,400))
 tag =image[150:200,110:160]
 image[110:160,150:200] = tag
@@ -115,16 +110,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-###output:
-
-
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/aca35e47-02d3-4494-b06a-84700cfcf407)
+![Screenshot 2024-02-21 185725](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/c067c100-35ff-45df-9a2c-47989b6a0548)
 
 
 ### vi) BGR and RGB to HSV and GRAY
 ```
 import cv2
-img = cv2.imread('lion.jpg',1)
+img = cv2.imread('tree.png',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -143,13 +135,13 @@ cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/e8c84189-5241-41b7-9535-e019e2c30486)
+
+![Screenshot 2024-02-21 185755](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/672b5c9e-76be-4af9-a45c-ece3ffe2e428)
 
 
 ### vii) HSV to RGB and BGR
-```import cv2
-img = cv2.imread('lion.jpg')
+```
+img = cv2.imread('tree.png')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -164,15 +156,14 @@ cv2.imshow('HSV2RGB',BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/dd55fb49-917d-4f7c-9abc-919fb51d2f6c)
 
+![Screenshot 2024-02-21 185820](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/ab92f371-f9d9-4d5a-a98b-3a7bde7f14a4)
 
 
 ### viii) RGB and BGR to YCrCb
 ```
 import cv2
-img = cv2.imread('lion.jpg')
+img = cv2.imread('tree.png')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -185,14 +176,14 @@ cv2.imshow('BGR-2-YCrCb',YCrCb2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/fd64907d-cc45-4f50-b2d7-bb6e38f53db4)
+
+![Screenshot 2024-02-21 185837](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/946dcf55-3986-4c38-b7b1-7feeccf3342a)
 
 
 ### ix) Split and merge RGB Image
 ```
 import cv2
-img = cv2.imread('lion.jpg',1)
+img = cv2.imread('tree.png',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -209,14 +200,17 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/ecaca5e6-6912-4a91-b850-36932843af0e)
+
+
+
+
+![Screenshot 2024-02-21 185858](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/dad1d471-b3b8-452c-bc29-7fb03fcd5fde)
 
 
 ### x) Split and merge HSV Image
 ```
 import cv2
-img = cv2.imread("lion.jpg",1)
+img = cv2.imread("tree.png",1)
 img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -232,13 +226,8 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-###output:
-![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/ed064070-8f65-4818-b8dd-7a662f5ceb5a)
 
-
-
-
-
+![Screenshot 2024-02-21 185920](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/56dae9ee-70dc-46fd-ac9f-05aa6d16f635)
 
 
 ## Result:
