@@ -45,7 +45,7 @@ Split and merge HSV Image
 ### i) Read and display the imageimport cv2
     image=cv2.imread('dog.jpg',1)
     image=cv2.resize(image,(300,300))
-    cv2.imshow('BEULAH',image)
+    cv2.imshow('RAKESH',image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
