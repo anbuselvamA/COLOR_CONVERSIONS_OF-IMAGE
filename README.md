@@ -49,7 +49,7 @@
 import cv2
 image=cv2.imread('anbu.png',1)
 image=cv2.resize(image,(400,300))
-cv2.imshow('rose',image)
+cv2.imshow('anbu',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -58,7 +58,8 @@ cv2.destroyAllWindows()
 
 
 
-![Screenshot 2024-05-07 104121](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/b822108e-7741-4c17-9b47-2d0f1a53068f)
+![image](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/48b54872-9843-4aa0-b7f6-f941771e9eb3)
+
 
 
 
