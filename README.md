@@ -47,7 +47,7 @@
 ### i) Read and display the image
 ```
 import cv2
-image=cv2.imread('tree.png',1)
+image=cv2.imread('anbu.png',1)
 image=cv2.resize(image,(400,300))
 cv2.imshow('rose',image)
 cv2.waitKey(0)
@@ -58,34 +58,38 @@ cv2.destroyAllWindows()
 
 
 
-![Screenshot 2024-02-21 185629](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/0ee6cb13-9912-43fb-a330-55ce22f32989)
+![Screenshot 2024-05-07 104121](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/b822108e-7741-4c17-9b47-2d0f1a53068f)
+
 
 
 ### ii)Write the image
 ```
 import cv2
-image=cv2.imread('tree.png',0)
+image=cv2.imread('anbu.jpg',0)
 cv2.imwrite('test.jpg',image)
 ```
 
-![Screenshot 2024-02-21 214919](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/9d329b84-a4ad-429a-9e6b-33533b8f80e6)
+
+![Uploading Screenshot 2024-05-07 110234.png…]()
+
 
 
 ### iii)Shape of the Image
 ```
 import cv2
-image=cv2.imread('tree.png')
+image=cv2.imread('anbu.jpg')
 print(image.shape)
 ```
 
-![Screenshot 2024-02-21 214927](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/896a2517-2d6f-4f55-90fc-fe0055fd62fd)
+![Screenshot 2024-05-07 110424](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/d4dcf008-1ab6-42e4-87dd-0b38213b939c)
+
 
 
 ### iv)Access rows and columns
 ```
 import random
 import cv2
-image=cv2.imread('tree.png',1)
+image=cv2.imread('anbu.pjg',1)
 image=cv2.resize(image,(400,400))
 for i in range (150,200):
     for j in range(image.shape[1]):
@@ -97,13 +101,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![Screenshot 2024-02-21 185707](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/37ad4393-326c-413b-a714-c31fe4691ca1)
+![Screenshot 2024-05-07 104314](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/970ad0fc-345d-4899-a982-27c601489ae2)
+
 
 
 ### v)Cut and paste portion of image
 ```
 import cv2
-image=cv2.imread('tree.png',1)
+image=cv2.imread('anbu.jpg',1)
 image=cv2.resize(image,(400,400))
 tag =image[150:200,110:160]
 image[110:160,150:200] = tag
@@ -111,14 +116,14 @@ cv2.imshow('image1',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Screenshot 2024-05-07 104404](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/18a578af-00ec-48a8-95b9-f5587c808880)
 
-![Screenshot 2024-02-21 185725](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/c067c100-35ff-45df-9a2c-47989b6a0548)
 
 
 ### vi) BGR and RGB to HSV and GRAY
 ```
 import cv2
-img = cv2.imread('tree.png',1)
+img = cv2.imread('anbu.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -138,12 +143,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![Screenshot 2024-02-21 185755](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/672b5c9e-76be-4af9-a45c-ece3ffe2e428)
+![Screenshot 2024-05-07 104909](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/86c63ec3-9b9e-4a56-8b2d-2e108b1c901f)
+
 
 
 ### vii) HSV to RGB and BGR
 ```
-img = cv2.imread('tree.png')
+img = cv2.imread('anbu.jpg')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -159,13 +165,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![Screenshot 2024-02-21 185820](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/ab92f371-f9d9-4d5a-a98b-3a7bde7f14a4)
+![Screenshot 2024-05-07 105251](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/cb23fea0-2541-46ae-8e83-c0340fcca7e0)
+
 
 
 ### viii) RGB and BGR to YCrCb
 ```
 import cv2
-img = cv2.imread('tree.png')
+img = cv2.imread('anbu.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -179,13 +186,14 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-![Screenshot 2024-02-21 185837](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/946dcf55-3986-4c38-b7b1-7feeccf3342a)
+
+![Screenshot 2024-05-07 105344](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/65b85eed-905e-4d29-8657-ad9424b52194)
 
 
 ### ix) Split and merge RGB Image
 ```
 import cv2
-img = cv2.imread('tree.png',1)
+img = cv2.imread('anbu.jpg',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -202,17 +210,18 @@ cv2.imshow('Merged RGB image',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Screenshot 2024-05-07 105656](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/21ef41d3-17d6-4acf-bec3-0954e8005c19)
 
 
 
 
-![Screenshot 2024-02-21 185858](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/dad1d471-b3b8-452c-bc29-7fb03fcd5fde)
+
 
 
 ### x) Split and merge HSV Image
 ```
 import cv2
-img = cv2.imread("tree.png",1)
+img = cv2.imread("anbu.jpg",1)
 img = cv2.resize(img,(200,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -228,8 +237,8 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![Uploading Screenshot 2024-05-07 105742.png…]()
 
-![Screenshot 2024-02-21 185920](https://github.com/premalatha-sureshbabu/COLOR_CONVERSIONS_OF-IMAGE/assets/120620842/56dae9ee-70dc-46fd-ac9f-05aa6d16f635)
 
 
 ## Result:
