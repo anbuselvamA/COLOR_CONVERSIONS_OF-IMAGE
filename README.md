@@ -69,8 +69,8 @@ image=cv2.imread('anbu.jpg',0)
 cv2.imwrite('test.jpg',image)
 ```
 
+![Screenshot 2024-05-07 110234](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/407a8241-0675-4e96-91a7-c6a586337fab)
 
-![Uploading Screenshot 2024-05-07 110234.png…]()
 
 
 
@@ -237,7 +237,8 @@ cv2.imshow('Merged',merged)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-![Uploading Screenshot 2024-05-07 105742.png…]()
+
+![Screenshot 2024-05-07 105742](https://github.com/anbuselvamA/COLOR_CONVERSIONS_OF-IMAGE/assets/119559871/7364a71c-8046-4c8f-8568-7c02ea19faa7)
 
 
 
